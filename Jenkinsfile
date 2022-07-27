@@ -2,8 +2,8 @@ pipeline {
   agent  any  
   
   environment {
-    imageId = 'use-name/image-name:1.$BUILD_NUMBER'
-    docker_registry = 'your_docker_registry'
+    imageId = 'sooraj/image-name:1.$BUILD_NUMBER'
+    docker_registry = 'dockerhub.io'
   }
   stages {
     stage('Docker build') {
