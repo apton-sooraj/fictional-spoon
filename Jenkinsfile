@@ -1,7 +1,6 @@
 pipeline {
-  agent {
-    label any  
-  }
+  agent  any  
+  
   environment {
     imageId = 'use-name/image-name:1.$BUILD_NUMBER'
     docker_registry = 'your_docker_registry'
