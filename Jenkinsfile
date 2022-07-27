@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'any'  
+    label any  
   }
   environment {
     imageId = 'use-name/image-name:1.$BUILD_NUMBER'
