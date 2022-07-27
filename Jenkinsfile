@@ -3,12 +3,12 @@ pipeline {
     stages {
     stage('Docker build') {
       steps {
-        sh "docker build --no-cache --force-rm -t ${imageId} ."
+        sh "docker build --no-cache --force-rm -t test ."
       }
     }
     stage('Clean') {
       steps{
-        sh "docker rmi ${imageId}"
+        sh "docker rmi test"
       }
     }
   }
