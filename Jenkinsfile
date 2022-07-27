@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'docker'  
+    label 'any'  
   }
   environment {
     imageId = 'use-name/image-name:1.$BUILD_NUMBER'
