@@ -1,4 +1,7 @@
 pipeline {
+  agent {
+    label 'docker'  # separate agent (launched as JAR on host machine) to avoid running docker inside docker
+  }
   environment {
     imageId = 'use-name/image-name:1.$BUILD_NUMBER'
     docker_registry = 'your_docker_registry'
